@@ -1,0 +1,68 @@
+.roboto-light {
+    font-family: "Roboto", sans-serif;
+    font-weight: 600;
+    font-style: normal;
+}
+
+.knop {
+    background-color: #2c3e50;
+    padding: 15px 25px;
+    text-align: center;
+    border-radius: 10px;
+    display: inline-block;
+    font-weight: bold;
+    font-size: 16px;
+    text-decoration: none;
+    color: white;
+    transition: background-color 0.3s;
+    border: none;
+}
+
+.knop:hover {
+    cursor: pointer;
+    background-color: #535d67;
+}
+
+.textgebied {
+    border: 1.5px solid black;
+    width: 200px;
+    height: 200px;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    font-size: 16px;
+    overflow: auto;
+    word-wrap: break-word;
+    padding-left: 10%;
+    padding-right: 10%;
+    box-sizing: border-box;
+    scrollbar-width: none;
+}
+
+.textgebied::-webkit-scrollbar {
+    display: none;
+}
+
+.knop {
+    background-color: #2c3e50;
+    padding: 15px 25px;
+    text-align: center;
+    border-radius: 10px;
+    display: inline-block;
+    font-weight: bold;
+    font-size: 16px;
+    text-decoration: none;
+    color: white;
+    transition: background-color 0.3s;
+}
+
+.background {
+    height: 100vh;
+    margin: 0;
+    align-content: center;
+    text-align: center;
+    background: linear-gradient(135deg, #0088ff, #00f2fe);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
