@@ -1,112 +1,25 @@
 <!DOCTYPE html>
 <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Get Quote | Quotes</title>
 
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="quote.css">
+    </head>
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Quotes</title>
-</head>
+    <body style="justify-items: center;">
+        <h1 class="roboto-light">Genereer hier een quote!</h1>
+        <div style="display: flex; flex-direction: column; align-items: center; gap: 70px;">
+            <button class="knop roboto-light" onclick="typeText()">Genereer een quote</button>
+            <div id="author"></div>
+            <div class="roboto-light textgebied" id="textArea"></div>
+            <a href="/" class="roboto-light knop">ga terug</a>
+        </div>
 
-<body style="justify-items: center;">
-    <h1 class="roboto-light">Genereer hier een quote!</h1>
-    <div style="display: flex; flex-direction: column; align-items: center; gap: 70px;">
-        <button class="knop roboto-light" onclick="typeText()">Genereer een quote</button>
-        <div class="roboto-light textgebied" id="textArea"></div>
-        <a href="/" class="roboto-light knop">ga terug</a>
-    </div>
-
-    <script>
-        function typeText() {
-            const textArea = document.getElementById("textArea");
-            const text = "“I'm selfish, impatient and a little insecure. I make mistakes, I am out of control and at times hard to handle. But if you can't handle me at my worst, then you sure as hell don't deserve me at my best. texdt terfsffd eee ekejr eee lalalaala jej e e”";
-            textArea.textContent = "";
-            let index = 0;
-
-            const typingEffect = setInterval(() => {
-                if (index < text.length) {
-                    textArea.textContent += text.charAt(index);
-                    index++;
-                } else {
-                    clearInterval(typingEffect);
-                }
-            }, 100);
-        }
-    </script>
-</body>
-
+        <script src="app.js"></script>
+    </body>
 </html>
-
-<style>
-    .roboto-light {
-        font-family: "Roboto", sans-serif;
-        font-weight: 600;
-        font-style: normal;
-    }
-
-    .knop {
-        background-color: #2c3e50;
-        padding: 15px 25px;
-        text-align: center;
-        border-radius: 10px;
-        display: inline-block;
-        font-weight: bold;
-        font-size: 16px;
-        text-decoration: none;
-        color: white;
-        transition: background-color 0.3s;
-        border: none;
-    }
-
-    .knop:hover {
-        cursor: pointer;
-        background-color: #535d67;
-    }
-
-    .textgebied {
-        border: 1.5px solid black;
-        width: 200px;
-        height: 200px;
-        display: flex;
-        justify-content: center;
-        text-align: center;
-        font-size: 16px;
-        overflow: auto;
-        word-wrap: break-word;
-        padding-left: 10%;
-        padding-right: 10%;
-        box-sizing: border-box;
-        scrollbar-width: none;
-    }
-
-    .textgebied::-webkit-scrollbar {
-        display: none;
-    }
-
-    .knop {
-        background-color: #2c3e50;
-        padding: 15px 25px;
-        text-align: center;
-        border-radius: 10px;
-        display: inline-block;
-        font-weight: bold;
-        font-size: 16px;
-        text-decoration: none;
-        color: white;
-        transition: background-color 0.3s;
-    }
-
-    .background {
-        height: 100vh;
-        margin: 0;
-        align-content: center;
-        text-align: center;
-        background: linear-gradient(135deg, #0088ff, #00f2fe);
-        display: flex;
-        justify-content: center;
-        align-items: center;
-    }
-</style>
